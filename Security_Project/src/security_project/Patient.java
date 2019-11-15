@@ -87,5 +87,13 @@ public class Patient extends Person{
 
         return pa;
 
+    
+        
+        
+}
+
+    @Override
+    public String toString() {
+        return "Patient{" + "id=" + id + ", acceptedDate=" + acceptedDate + ", disease=" + disease +",FName="+FName+" , LName"+LName+" ,gender"+gender+" ,birth date"+birthDate+" ,age"+ age+" ,phone"+phone+" ,address"+address+'}';
     }
 }
