@@ -69,7 +69,7 @@ public class Admins extends Person{
 
     @Override
     public String toString() {
-        return "Admins{" + "passwoed=" + passwoed + ", re_passwoed=" + re_passwoed + ", admins_FileName=" + admins_FileName + '}';
+        return "Admins{" + "passwoed=" + passwoed + ", re_passwoed=" + re_passwoed + ",FName="+FName+" , LName"+LName+" ,gender"+gender+" ,birth date"+birthDate+" ,age"+ age+" ,phone"+phone+" ,address"+address+ '}';
     }
 
    
