@@ -25,25 +25,25 @@ public class Security_Project {
             switch(ch){
                 case 1:
                     System.out.println("Enter Patient Info ... ");
-                    System.out.print("Patient ID : ");
+                    System.out.println("Patient ID : ");
                     id = input.nextInt();
-                    System.out.print("Patient First Name : ");
+                    System.out.println("Patient First Name : ");
                     FName = input.nextLine();
-                    System.out.print("Patient Last Name : ");
+                    System.out.println("Patient Last Name : ");
                     LName = input.nextLine();
-                    System.out.print("Patient Gender : ");
+                    System.out.println("Patient Gender : ");
                     gender = input.nextLine();
-                    System.out.print("Patient Birth Date : ");
+                    System.out.println("Patient Birth Date : ");
                     birthDate=input.nextLine();
-                    System.out.print("Patient Age : ");
+                    System.out.println("Patient Age : ");
                     age = input.nextInt();
-                    System.out.print("Patient Accepted Date : ");
+                    System.out.println("Patient Accepted Date : ");
                     acc_date=input.nextLine();
-                    System.out.print("Patient Disease : ");
+                    System.out.println("Patient Disease : ");
                     disease=input.nextLine();
-                    System.out.print("Patient Phone : ");
+                    System.out.println("Patient Phone : ");
                     phone=input.nextLine();
-                    System.out.print("Patient Address : ");
+                    System.out.println("Patient Address : ");
                     address=input.nextLine();
                     admins1.addNewPatient(id, FName, LName, gender, birthDate, age, acc_date, disease, phone, address);
                     break;
