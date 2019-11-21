@@ -1,6 +1,7 @@
 
 package security_project;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 
@@ -57,7 +58,7 @@ public class Admins extends Person{
     
     
 }
-    
+  
     
     public void displayPatients() {
 
@@ -71,8 +72,16 @@ public class Admins extends Person{
     public String toString() {
         return "Admins{" + "passwoed=" + passwoed + ", re_passwoed=" + re_passwoed + ", admins_FileName=" + admins_FileName + '}';
     }
+ public void searchForPatient(int id) throws FileNotFoundException {
+        Patient x = new Patient();
+        System.out.println(x.searchPatient(id));
+    }
 
+   public void deletePatient(int id) {
+        Patient patie = new Patient();
+        patie.deletePatient(id);
+        System.out.println("deleted Successfully ... !");    }
    
     
-    
+
 }
