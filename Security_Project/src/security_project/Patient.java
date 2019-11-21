@@ -1,6 +1,7 @@
 
 package security_project;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 
@@ -87,5 +88,41 @@ public class Patient extends Person{
 
         return pa;
 
+    }
+      private int getPatientIndex(int id){
+        for (int i = 0; i < patients.size(); i++){
+            
+            if(patients.get(i).getId() == id)
+                return i;
+        }
+        return -1;
+    }
+   
+
+        public String searchPatient(int id) throws FileNotFoundException{
+        loadFromFile();
+        int index = getPatientIndex(id);
+        if(index != -1)
+            return  patients.get(index).toString();
+        else 
+            return "\nNot Found ...!";
+    }
+            private void commitToFile() {
+        FManger.Write(patients.get(0).getPatientData(), patients_FileName, false);
+        for (int i = 1; i < patients.size(); i++) {
+            FManger.Write(patients.get(i).getPatientData(), patients_FileName, true);
+        }
+            }
+        public void deletePatient(int id){
+        loadFromFile();
+        int index = getPatientIndex(id);
+        patients.remove(index);
+        commitToFile();
+    } 
+         @Override
+    public String toString() {
+        return   "\n Patient ID : " + id +"  "+"Frist Name : "+FName+"  "+"Last Name : "+LName+"\n"+" Gender : " +gender
+                +"  "+"Brith Date : "+birthDate+" "+"Age : "+age+"\n"+"Accepted Date"+acceptedDate+"  "+
+                "Disease : "+disease+"  "+"Phone : "+phone+"\n"+"Address : "+address;
     }
 }
