@@ -67,6 +67,7 @@ public class Security_Project {
                         break;
                 default:
                     System.out.println("Enter vaild Option :(");
+                    break;
             }
         }
         
