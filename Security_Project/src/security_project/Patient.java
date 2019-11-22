@@ -93,10 +93,7 @@ public class Patient extends Person{
         
 }
 
-    @Override
-    public String toString() {
-        return "Patient{" + "id=" + id + ", acceptedDate=" + acceptedDate + ", disease=" + disease +",FName="+FName+" , LName"+LName+" ,gender"+gender+" ,birth date"+birthDate+" ,age"+ age+" ,phone"+phone+" ,address"+address+'}';
-    }
+   
       private int getPatientIndex(int id){
         for (int i = 0; i < patients.size(); i++){
             
