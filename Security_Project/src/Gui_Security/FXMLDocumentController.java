@@ -26,13 +26,13 @@ public class FXMLDocumentController implements Initializable {
       @FXML
     private TextField textF;
     @FXML
-    private void handleButtonAction(MouseEvent event) {
+    private void handleButtonSearchAction(MouseEvent event) {
         System.out.println("You clicked me!");
         label.setText("iam search button");
     }
     @FXML
     
-     private void handleButtonAction2(MouseEvent event) {
+     private void handleButtonDeleteAction(MouseEvent event) {
        Patient a=new Patient();
        a.deletePatient(Integer.parseInt(textF.getText().toString()));
     }
