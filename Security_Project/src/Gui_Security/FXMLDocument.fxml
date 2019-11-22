@@ -11,7 +11,7 @@
    <children>
       <ImageView fitHeight="400.0" fitWidth="700.0" layoutY="6.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@image/clinic.jpg" />
+            <Image url="@security.image/clinic.jpg" />
          </image>
       </ImageView>
       <AnchorPane layoutY="14.0" prefHeight="394.0" prefWidth="592.0">
@@ -19,7 +19,7 @@
             <TextField layoutX="53.0" layoutY="34.0" prefHeight="25.0" prefWidth="390.0" style="-fx-background-color: #C0C0C0;" />
             <Label layoutX="53.0" layoutY="2.0" prefHeight="32.0" prefWidth="111.0" text="Enter Patient ID :" />
             <Button layoutX="476.0" layoutY="34.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Search" />
-            <Button layoutX="75.0" layoutY="90.0" mnemonicParsing="false" text="Delete" />
+            <Button id="delete_btn" layoutX="75.0" layoutY="90.0" mnemonicParsing="false" onAction="#handleButtonDeleteAction" onMouseClicked="#handleButtonDeleteAction" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: #f0f0f0;" text="Delete" />
          </children>
       </AnchorPane>
    </children>
